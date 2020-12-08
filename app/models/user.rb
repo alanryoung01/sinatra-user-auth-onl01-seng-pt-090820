@@ -1,3 +1,5 @@
 class User < ActiveRecord::Base
   validates_presence_of :name, :email, :password
-end
+  create_table :name, :email, :password
+
+  
